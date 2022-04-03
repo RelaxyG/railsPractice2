@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :restaurants
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # Show all restaurants
   # root to: 'restaurants#index'
@@ -16,5 +17,4 @@ Rails.application.routes.draw do
   # patch '/restaurants/:id', to: 'restaurants#update'
   # # Delete arestaurant
   # delete '/restaurants/:id', to: 'restaurants#destroy'
-  resources :restaurants
 end

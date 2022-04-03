@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1vh;
+}
+.inner {
+  margin: 4vh;
+}
