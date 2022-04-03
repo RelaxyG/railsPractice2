@@ -2,7 +2,7 @@
 
 class Restaurant < ApplicationRecord
   validates :name, presence: true
-  validates :rating, presence: true
+  validates :address, presence: true
   validates :contact, presence: true
-  validates :address, inclusion: { in: 7..10 }
+  validates :rating, inclusion: { in: 7..10 }
 end
