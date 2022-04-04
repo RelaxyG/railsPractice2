@@ -8,6 +8,7 @@
       <h4><%=restaurant.address%></h4>
       <h4><%=restaurant.contact%></h4>
       <h4><%= "⭐" * restaurant.rating%></h4>
+      <h4><%= link_to restaurant.name, restaurant_path(restaurant) %></h4>
     </div>
   <% end %>
 </div>
