@@ -13,16 +13,17 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.new(restaurant_params)
-    @restaurant.save
-    redirect_to restaurant_path(@restaurant)
+     @restaurant = Restaurant.new(restaurant_params)
+      @restaurant.save
+      redirect_to restaurant_path(@restaurant.id)
+
   end
 
   def edit; end
 
   def update
     @restaurant.update(restaurant_params)
-    redirect_to restaurant_path(@restaurant)
+    redirect_to restaurant_path(@restaurant.id)
   end
 
   def destroy

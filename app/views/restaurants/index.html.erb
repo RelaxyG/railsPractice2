@@ -1,10 +1,10 @@
-<h1>
+<h1 class="text-center">
   All Resaturants
   <%= link_to "Create a restaurant", new_restaurant_path%>
 </h1>
-<div class="flex">
+<div class="d-flex p-2 flex-wrap mx-auto">
   <% @restaurants.each do |restaurant| %>
-    <div class="inner">
+    <div class="w-5 m-5">
       <h3><%=restaurant.name%></h3>
       <h4><%=restaurant.address%></h4>
       <h4><%=restaurant.contact%></h4>

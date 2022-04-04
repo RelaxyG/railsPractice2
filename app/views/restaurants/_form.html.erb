@@ -1,7 +1,15 @@
-<%= simple_form_for(@restaurant) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :rating %>
-  <%= f.input :contact %>
-  <%= f.submit %>
-<% end %>
+<div class="container my-5 mx-auto">
+  <div class="row">
+    <%= simple_form_for(@restaurant) do |f| %>
+      <div class="mx-auto col-sm-4"><%= f.input :name %></div>
+      <div class="mx-auto col-sm-4"><%= f.input :address %></div>
+      <div class="mx-auto col-sm-4"><%= f.input :rating %></div>
+      <div class="mx-auto col-sm-4"><%= f.input :contact %></div>
+      <div class="mx-auto col-sm-4">
+        <%= f.submit %>
+        <button class="rounded px-4 mx-4"><%= link_to "Home", restaurants_path%></button>
+      </div>
+    <% end %>
+  </div>
+
+</div>

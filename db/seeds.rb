@@ -12,7 +12,7 @@
     name: Faker::Restaurant.name,
     address: Faker::Address.city,
     contact: Faker::Number.number(digits: 10),
-    rating: rand(7..10)
+    rating: rand(1..5)
   )
-  p Faker::Restaurant.name
+
 end
