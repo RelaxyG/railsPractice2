@@ -6,3 +6,11 @@
   <%=@restaurant.contact%>
   <%=@restaurant.rating%>
 </h3>
+<span><%= link_to "Home", restaurants_path%></span>
+<span>
+  <%= link_to "Delete #{@restaurant.name}",
+            restaurant_path(@restaurant),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+</span>
+<span><%= link_to "Edit", edit_restaurant_path%></span>
