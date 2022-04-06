@@ -14,5 +14,4 @@
     contact: Faker::Number.number(digits: 10),
     rating: rand(1..5)
   )
-
 end
